@@ -1,0 +1,30 @@
+.btn {
+  position: relative;
+  user-select: none;
+}
+
+.btn:hover::after {
+  position: absolute;
+  content: "";
+  top: 30%;
+  left: -10%;
+  height: 50%;
+  border-left: ratio(0.1) solid var(--btn-effect);
+  @include media(laptop) {
+    top: 130%;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-left: none;
+    border-bottom: ratio(0.1) solid var(--btn-effect);
+  }
+}
+
+.btn:focus::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -30%;
+  border: ratio(0.1) solid #fff;
+  border-radius: 50%;
+}

@@ -1,0 +1,62 @@
+@import "src/stylesheet/1-helper/1-helper";
+
+:host {
+  padding: ratio(1) 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  .field {
+    font-weight: 900;
+    letter-spacing: ratio(-0.05);
+  }
+}
+
+nav {
+  position: relative;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+  > span:nth-child(odd) {
+    width: ratio(1);
+    border-bottom: ratio(0.1) solid;
+  }
+  > span:nth-child(even) {
+    width: ratio(0.5);
+    margin: ratio(0.2) 0;
+    border-bottom: ratio(0.1) solid;
+  }
+
+  @include media(laptop) {
+    display: none;
+  }
+}
+
+.item-list {
+  position: absolute;
+  right: 0;
+  display: none;
+  z-index: 10;
+  @include media(laptop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: ratio(15);
+  }
+}
+
+.show-menu {
+  display: flex;
+  flex-direction: column;
+  @include media(laptop) {
+    display: flex;
+    flex-direction: row;
+  }
+}

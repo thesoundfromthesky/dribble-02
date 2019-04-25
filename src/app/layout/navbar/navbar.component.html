@@ -1,0 +1,20 @@
+<figure class="logo">
+  <div class="field">field.</div>
+</figure>
+<nav>
+  <figure>
+    <div
+      class="hamburger"
+      (click)="hamburgerClick()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </figure>
+  <ul class="item-list" [ngClass]="cssClass">
+    <li><a href="#" class="btn">login</a></li>
+    <li><a href="#" class="btn">learn</a></li>
+    <li><a href="#" class="btn">contact</a></li>
+  </ul>
+</nav>

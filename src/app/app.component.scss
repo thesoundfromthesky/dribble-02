@@ -1,0 +1,15 @@
+@import "src/stylesheet/1-helper/1-helper";
+
+:host {
+  min-height: 100vh;
+  display: grid;
+  // app-navbar router-outlet app-main
+  grid-template-rows: auto 0 1fr;
+
+  padding: 0 ratio(1);
+  @include media(laptop) {
+    padding: 0 ratio(3);
+  }
+  
+  background: var(--bg-color);
+}
