@@ -1,6 +1,10 @@
 # Sample002
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+Coding practice with angular
+
+Design is from https://dribbble.com/shots/6128763-field/attachments
+
+This project was generated with [Angular CLI](ttps://github.com/angular/angular-cli) version 7.3.7.
 
 ## Development server
 
